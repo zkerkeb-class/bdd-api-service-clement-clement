@@ -1,4 +1,4 @@
-# WEB SERVICE API (Ynov)
+# WEB SERVICE API (Ynov) - Service dédié aux opérations en base de données
 
 ## Project members
 
