@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mysql from 'mysql2';
+import routes from './src/routes/index.js';
 import sequelize from './src/sequelize.js';
 
 dotenv.config();
@@ -23,6 +24,8 @@ if (!jwtSecret) {
 
 // Middleware Body Parser
 app.use(express.json());
+
+app.use('/api', routes); // Toutes les routes seront préfixées par /api
 
 // Configuration de la base de données
 const db = mysql.createConnection({
