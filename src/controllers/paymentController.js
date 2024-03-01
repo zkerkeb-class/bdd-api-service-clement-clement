@@ -1,5 +1,7 @@
 import Payment from '../models/Payment.js';
 
+//TODO: Utiliser un systeme de token comme sur une application 1€ = 10 tokens par ex
+
 export const createPayment = async (req, res) => {
   try {
     const payment = await Payment.create(req.body);
